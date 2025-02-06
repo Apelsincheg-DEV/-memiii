@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Самая жёсткая Галерея Мемов 🔥</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .meme {
+            position: relative;
+            transition: transform 0.2s ease-in-out;
+        }
+        .meme:hover {
+            transform: scale(1.2) rotate(3deg);
+        }
+        img {
+            max-width: 350px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .meme {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+    <script>
+        function playSound() {
+            let audio = new Audio('poop.mp3');
+            audio.play();
+        }
+        function playWelcomeSound() {
+            let welcomeAudio = new Audio('welcome.mp3');
+            welcomeAudio.play();
+        }
+        window.onload = playWelcomeSound;
+    </script>
+</head>
+<body>
+    <h1>🔥 Самая жёсткая Галерея Мемов 🔥</h1>
+    <marquee scrollamount="15">Эй, салага! Добро пожаловать в мир грязных мемов! 🚀</marquee>
+    <div class="gallery">
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme1.png" alt="Мем 1">
+        </div>
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme2.png" alt="Мем 2">
+        </div>
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme3.png" alt="Мем 3">
+        </div>
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme4.png" alt="Мем 4">
+        </div>
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme5.png" alt="Мем 5">
+        </div>
+        <div class="meme" onmouseover="playSound()">
+            <img src="meme6.png" alt="Мем 6">
+        </div>
+    </div>
+</body>
+</html>
